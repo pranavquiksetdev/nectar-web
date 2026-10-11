@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #b5651d;
+  --text: #2a170d;
+  --muted: #7a675a;
+  --cocoa: #24120a;
+  --cocoa-tile: #3a1e10;
+  --cream: #f3e4cf;
+  --caramel: #e0a458;
+}
+
+@theme inline {
+  --color-accent: var(--accent);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-cocoa: var(--cocoa);
+  --color-tile: var(--cocoa-tile);
+  --color-cream: var(--cream);
+  --color-caramel: var(--caramel);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: #fff;
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
